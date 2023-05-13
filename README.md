@@ -1,2 +1,2 @@
 # Encryptor3000
-A password converter created with a Kivy GUI
+A small program backed by a Kivy GUI that takes a prompt and converts it to a password that can be copied to your device's clipboard
