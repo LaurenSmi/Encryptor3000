@@ -4,7 +4,7 @@ import string
 def bigFib (name):
     return fib(name,1,1)
 
-
+# Recursively uses the Fibonacci sequence to scramble letters
 def fib(name, num1, num2):
     if(num2>= len(name)):
         return name
@@ -15,7 +15,7 @@ def fib(name, num1, num2):
     num1=temp
     fib(name,num1,num2)
 
-
+# Swaps characters with special symbols
 def special(webChar):
     specials = ['a','s','o','h','v','i']
     toChange = ['@','$','0','#','^','!']
@@ -25,12 +25,14 @@ def special(webChar):
             return toChange[i]
         return webChar
 
+# Reverses the user's prompt
 def flipper(webName):
     return webName[::-1]
 
 def randomizer(length):
     return random.randint(0,length-1)
 
+# Randomly adds lowercase letters throughout prompt
 def muchoPlus(name):
     random.seed(4)
     alpha = string.ascii_lowercase
