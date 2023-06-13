@@ -20,6 +20,7 @@ class FullGrid(GridLayout):
         self.ids.bottom_grid.copyTxt()
 
 class BottomGrid(GridLayout):
+    # Function to copy an encoded password to clipboard
     def copyTxt(self):
         name = ObjectProperty()
         encrypted = Encrypt.do_encrypt(name.text)
@@ -27,6 +28,7 @@ class BottomGrid(GridLayout):
         self.password.text = 'Your password: \n'+encrypted
         name.text = 'Copied to Clipboard!'
     
+    # Function to reset text and states to the default state
     def reset(self):
         name = ObjectProperty()
         self.toCopy.text = 'Copy and Convert to Password'
